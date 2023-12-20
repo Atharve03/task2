@@ -1,0 +1,205 @@
+[
+    {
+        "View": "Slider",
+        "Data": {
+          "IndicatorSelectedColor": "#ffffff",
+          "IndicatorUnSelectedColor": "#bcbcbc",
+          "ViewPortFraction": 0.8,
+          "AutoPlay": true,
+          "Padding": 5.0,
+          "SliderViewType": "Enlarge",
+          
+          "Items": [
+            {
+              "SliderType": "Image",
+              "SliderText": "Slider with Image",
+              "SliderLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "SliderButtonText": "My Button",
+              "SliderButtonColor": "#000000",
+              "SliderBackgroundColor": "#808080",
+              "SliderBannerType": "Product/Category/Blog/Weblink/Normal",
+              "SliderBannerUID": 1,
+              "SliderButtonClicked":""
+            },
+            {
+              "SliderType": "ImageWithText",
+              "SliderText": "Slider with Text",
+              "SliderLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "SliderButtonText": "My Button",
+              "SliderButtonColor": "#000000",
+              "SliderBackgroundColor": "#808080",
+              "SliderBannerType": "Product/Category/Blog/Weblink/Normal",
+              "SliderBannerUID": 2,
+              "SliderButtonClicked":""
+            },
+            {
+              "SliderType": "ImageWithButtonText",
+              "SliderText": "Slider with Button",
+              "SliderLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "SliderButtonText": "My Button",
+              "SliderButtonColor": "#000000",
+              "SliderBackgroundColor": "#808080",
+              "SliderBannerType": "Product/Category/Blog/Weblink/Normal",
+              "SliderBannerUID": 1234,
+              "SliderButtonClicked":""
+            }
+          ]
+        }
+      
+    },
+      {
+        "View": "Category",
+        "Data": {
+          "ImageBackgroundColor": "#d17171",
+          "TextColor": "#000000",
+          "FontSize": 20.0,
+          "ImageRadius": 10.0,
+          "ViewBackgroundColor":"#757575",
+          "ContainerBackgroundColor":"#bcbcbc",
+          "AllVisible": true,
+          "LinkType": "Category",
+          
+          "Items": [
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 1,
+              "TitleText" : "Category 1" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1624670760266-0ddc7639b3a4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-a&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 2,
+              "TitleText" : "Category 2" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+               "LinkHandle": "Image",
+              "LinkId": 3,
+              "TitleText" : "Category 3" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1585801442122-96dd773c76fa?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+               "LinkHandle": "Image",
+              "LinkId": 4,
+              "TitleText" : "Category 4" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 5,
+              "TitleText" : "Category 5" 
+            }
+          ]
+        }
+      },
+     
+      {
+        "View": "Product",
+        "Data": {
+          "ImageBackgroundColor": "#d17171",
+          "TextColor": "#000000",
+          "FontSize": 20.0,
+          "ImageRadius": 10.0,
+          "ViewBackgroundColor":"#757575",
+          "ContainerBackgroundColor":"#bcbcbc",
+          "AllVisible": true,
+          "LinkType": "Product",
+          
+          "Items": [
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 1,
+              "Price" : 99.0,
+              "TitleText" : "T-Shirt" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1624670760266-0ddc7639b3a4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-a&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 2,
+              "Price" : 299.0,
+              "TitleText" : "Shirt" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 3,
+              "Price" : 399.0,
+              "TitleText" : "Hoodie" 
+            },
+            {
+              "ImageLink": "https://images.unsplash.com/photo-1585801442122-96dd773c76fa?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              "LinkHandle": "Image",
+              "LinkId": 4,
+              "Price" : 699.0,
+              "TitleText" : "Jeans" 
+            }
+          ]
+        }
+      },
+      
+      {
+        "View": "TextView",
+        "Data": {
+          "Text": "My Button",
+          "FontSize": 20.0,
+          "Description": "My Text Description",
+          "DescriptionFontSize": 16.0,
+          "FontColor": "#000000",
+          "FontWeight": "normal",
+          "FontType": "",
+          "NumberOfLines": 4,
+          "BackgroundColor": "#EAEAEA",
+          "Margin": 8.0,
+          "Padding": 8.0
+        }
+      },
+     
+      {
+        "View": "ImageView",
+        "Data": {
+          "Src": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "Radius": 19.0,
+          "ContainerColor": "#808080",
+          "BackgroundColor": "#EAEAEA",
+          "Margin": 8.0,
+          "Padding": 8.0,
+      
+          "TextView": {
+            "DescriptionFontSize": 16.0,
+            "FontColor": "#000000",
+            "FontWeight": "normal",
+            "FontType": "",
+            "NumberOfLines": 4,
+            "BackgroundColor2": "#EAEAEA",
+            "Margin": 8.0,
+            "Padding": 8.0,
+            "Description": "My TextView Description"
+          }
+        }
+      },
+      
+      {
+        "View": "VideoView",
+        "Data": {
+          "Src": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+          "ContainerColor": "#808080",
+          "BackgroundColor": "#EAEAEA",
+          "Margin": 8.0,
+          "Padding": 8.0,
+          "Radius": 19.0,
+      
+          "TextView": {
+            "DescriptionFontSize": 16.0,
+            "FontColor": "#000000",
+            "FontWeight": "normal",
+            "NumberOfLines": 4,
+            "BackgroundColor2": "#EAEAEA",
+            "Margin": 8.0,
+            "Padding": 8.0,
+            "Description": "My TextView Description"
+          }
+        }
+      }
+]
