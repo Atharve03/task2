@@ -613,7 +613,7 @@ class VideoViewTextView {
 
 class BlogViewData {
   bool? blogViewAutoPlay;
-  String? blogViewAspectRatio;
+  double? blogViewAspectRatio;
   bool? blogViewEnableInfiniteScroll;
   String? blogViewAutoPlayAnimationDuration;
   double? blogViewViewportFraction;
@@ -673,40 +673,44 @@ class BlogViewData {
 class BlogViewItems {
   String? blogViewTitle;
   String? blogViewDescription;
-  String? blogViewDate;
   String? blogViewImagePath;
   String? blogViewTextTitleColor;
   String? blogViewTextDescriptionColor;
+  String? blogViewTextBackgroundColor;
   String? blogViewBackgroundColor;
+  double? blogViewRadius;
 
   BlogViewItems(
       {this.blogViewTitle,
       this.blogViewDescription,
-      this.blogViewDate,
       this.blogViewImagePath,
       this.blogViewTextTitleColor,
       this.blogViewTextDescriptionColor,
-      this.blogViewBackgroundColor});
+      this.blogViewTextBackgroundColor,
+      this.blogViewBackgroundColor,
+      this.blogViewRadius});
 
   BlogViewItems.fromJson(Map<String, dynamic> json) {
     blogViewTitle = json['BlogViewTitle'];
     blogViewDescription = json['BlogViewDescription'];
-    blogViewDate = json['BlogViewDate'];
     blogViewImagePath = json['BlogViewImagePath'];
     blogViewTextTitleColor = json['BlogViewTextTitleColor'];
     blogViewTextDescriptionColor = json['BlogViewTextDescriptionColor'];
+    blogViewTextBackgroundColor = json['BlogViewTextBackgroundColor'];
     blogViewBackgroundColor = json['BlogViewBackgroundColor'];
+    blogViewRadius = json['BlogViewRadius'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['BlogViewTitle'] = this.blogViewTitle;
     data['BlogViewDescription'] = this.blogViewDescription;
-    data['BlogViewDate'] = this.blogViewDate;
     data['BlogViewImagePath'] = this.blogViewImagePath;
     data['BlogViewTextTitleColor'] = this.blogViewTextTitleColor;
     data['BlogViewTextDescriptionColor'] = this.blogViewTextDescriptionColor;
+    data['BlogViewTextBackgroundColor'] = this.blogViewTextBackgroundColor;
     data['BlogViewBackgroundColor'] = this.blogViewBackgroundColor;
+    data['BlogViewRadius'] = this.blogViewRadius;
     return data;
   }
 }

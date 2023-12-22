@@ -4,68 +4,54 @@ import 'package:flutter/material.dart';
 
 class WidgetCall extends StatelessWidget {
   BlogViewItems blogViewItems;
-  WidgetCall(this.blogViewItems, {super.key});
+  WidgetCall(this.blogViewItems);
+
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Container(
-            // height: 200,
-            margin: EdgeInsets.only(bottom: 8.0, right: 8.0, left: 8.0),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0), color: Colors.black),
-            child: Image(
-              image: NetworkImage(blogViewItems.blogViewImagePath!),
-              fit: BoxFit.contain,
-            )),
-        SizedBox(
-          height: 10,
+    var textColor = Util.getColorFromHex(
+        blogViewItems.blogViewTextTitleColor!);
+    var bgColor = Util.getColorFromHex(blogViewItems.blogViewBackgroundColor!);
+
+    return Container(
+      
+            padding: EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(blogViewItems.blogViewRadius!),
+          color: bgColor,
         ),
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
+        width: double.infinity,
+        child: Column(children: [
+             ClipRRect(
+              borderRadius:
+                  BorderRadius.circular(blogViewItems.blogViewRadius!),
+              child: Image.network(
+                blogViewItems.blogViewImagePath!,
+                fit: BoxFit.cover,
+                width: double.infinity,
+              ),
           ),
-          child: Text(
-            blogViewItems.blogViewTitle.toString(),
+          
+        SizedBox(
+          height: 5,
+        ),
+          Text(
+            blogViewItems.blogViewTitle!,
             style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 18,
-                color: Util.getColorFromHex(
-                    blogViewItems.blogViewTextTitleColor.toString())),
+                color: textColor),
             maxLines: 2,
             textAlign: TextAlign.start,
           ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.white38,
-          ),
-          child: Text(
+          Text(
             blogViewItems.blogViewDescription.toString(),
             style: TextStyle(
                 fontSize: 14,
-                color: Util.getColorFromHex(
-                    blogViewItems.blogViewTextDescriptionColor.toString())),
+                color: textColor),
             maxLines: 2,
-            textAlign: TextAlign.start,
+            textAlign: TextAlign.center,
           ),
-        ),
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.white38,
-          ),
-          child: Text(
-            blogViewItems.blogViewDate.toString(),
-            style: TextStyle(
-                color: Util.getColorFromHex(
-                    blogViewItems.blogViewTextTitleColor.toString())),
-            maxLines: 2,
-            textAlign: TextAlign.start,
-          ),
-        ),
-      ],
-    );
+        
+        ]));
   }
 }

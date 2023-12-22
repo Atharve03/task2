@@ -34,10 +34,10 @@ class _WidgetBlogViewState extends State<WidgetBlogView> {
             }
           }).toList(),
           options: CarouselOptions(
-            height: 360.0,
+            // height: 375.0,
             // enlargeCenterPage: true,
             autoPlay: widget.blogViewData.blogViewAutoPlay!,
-            aspectRatio: 16 / 20,
+            aspectRatio:  widget.blogViewData.blogViewAspectRatio!,
             autoPlayCurve: Curves.fastOutSlowIn,
             enableInfiniteScroll:
                 widget.blogViewData.blogViewEnableInfiniteScroll!,
@@ -52,7 +52,7 @@ class _WidgetBlogViewState extends State<WidgetBlogView> {
           ),
         ),
         SizedBox(
-          height: 20,
+          height: 1,
         ),
         DotsIndicator(
           decorator: DotsDecorator(

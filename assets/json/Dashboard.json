@@ -47,6 +47,51 @@
       }
     },
     {
+      "View": "BlogView",
+      "BlogViewData": {
+        "BlogViewAutoPlay": false,
+        "BlogViewAspectRatio": 1.142857142857143,
+        "BlogViewEnableInfiniteScroll": true,
+        "BlogViewAutoPlayAnimationDuration": "Duration(milliseconds: 800)",
+        "BlogViewViewportFraction": 1.0,
+        "BlogViewViewType": "View2",
+        "BlogViewActiveColor": "#ffbf00",
+        "BlogViewColorDots": "#0000FF",
+        "BlogViewItems": [
+          {
+            "BlogViewTitle": "title1",
+            "BlogViewDescription": "cvbxcvbnfdsfbgfdsdfgbfdfbvvcv",
+            "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
+            "BlogViewTextTitleColor": "#000000",
+            "BlogViewTextDescriptionColor": "#000000",
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
+          },
+          {
+            "BlogViewTitle": "title2",
+            "BlogViewDescription": "dfxcvxxvbbnbvfdsadfghjgfdsfghjgfdsdfghjjhgfdsaszdxfcgvhbjnhgfdsazdxfcgvhgfdsdzxfcgvcxcvfcbvfbvgb",
+            "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
+            "BlogViewTextTitleColor": "#000000",
+            "BlogViewTextDescriptionColor": "#000000",
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
+          },
+          {
+            "BlogViewTitle": "title3",
+            "BlogViewDescription": "cxgvnbfcgvbccvbnvcgvbvvvfdsfvxbcxjndbjsmndfbsnvdbv jhxfnfgdbd ncvbvbcc",
+            "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
+            "BlogViewTextTitleColor": "#000000",
+            "BlogViewTextDescriptionColor": "#000000",
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
+          }
+        ]
+      }
+    },
+    {
       "View": "VideoView",
       "VideoViewData": {
         "VideoViewSrc": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
@@ -65,6 +110,51 @@
           "VideoViewPadding": 8.0,
           "VideoViewDescription": "My TextView Description"
         }
+      }
+    },
+    {
+      "View": "BlogView",
+      "BlogViewData": {
+        "BlogViewAutoPlay": false,
+        "BlogViewAspectRatio": 1.142857142857143,
+        "BlogViewEnableInfiniteScroll": true,
+        "BlogViewAutoPlayAnimationDuration": "Duration(milliseconds: 800)",
+        "BlogViewViewportFraction": 1.0,
+        "BlogViewViewType": "View3",
+        "BlogViewActiveColor": "#ffbf00",
+        "BlogViewColorDots": "#0000FF",
+        "BlogViewItems": [
+          {
+            "BlogViewTitle": "title1",
+            "BlogViewDescription": "cvbxcvbnfdsfbgfdsdfgbfdfbvvcv",
+            "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
+            "BlogViewTextTitleColor": "#000000",
+            "BlogViewTextDescriptionColor": "#000000",
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
+          },
+          {
+            "BlogViewTitle": "title2",
+            "BlogViewDescription": "dfxcvxxvbbnbvfdsadfghjgfdsfghjgfdsdfghjjhgfdsaszdxfcgvhbjnhgfdsazdxfcgvhgfdsdzxfcgvcxcvfcbvfbvgb",
+            "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
+            "BlogViewTextTitleColor": "#000000",
+            "BlogViewTextDescriptionColor": "#000000",
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
+          },
+          {
+            "BlogViewTitle": "title3",
+            "BlogViewDescription": "cxgvnbfcgvbccvbnvcgvbvvvfdsfvxbcxjndbjsmndfbsnvdbv jhxfnfgdbd ncvbvbcc",
+            "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
+            "BlogViewTextTitleColor": "#000000",
+            "BlogViewTextDescriptionColor": "#000000",
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
+          }
+        ]
       }
     },
     {
@@ -263,7 +353,7 @@
       "View": "BlogView",
       "BlogViewData": {
         "BlogViewAutoPlay": false,
-        "BlogViewAspectRatio": "16 / 25",
+        "BlogViewAspectRatio": 1.142857142857143,
         "BlogViewEnableInfiniteScroll": true,
         "BlogViewAutoPlayAnimationDuration": "Duration(milliseconds: 800)",
         "BlogViewViewportFraction": 1.0,
@@ -274,29 +364,32 @@
           {
             "BlogViewTitle": "title1",
             "BlogViewDescription": "cvbxcvbnfdsfbgfdsdfgbfdfbvvcv",
-            "BlogViewDate": "2023/10/12",
             "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
             "BlogViewTextTitleColor": "#000000",
             "BlogViewTextDescriptionColor": "#000000",
-            "BlogViewBackgroundColor": "#FFFFFF"
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
           },
           {
             "BlogViewTitle": "title2",
             "BlogViewDescription": "dfxcvxxvbbnbvfdsadfghjgfdsfghjgfdsdfghjjhgfdsaszdxfcgvhbjnhgfdsazdxfcgvhgfdsdzxfcgvcxcvfcbvfbvgb",
-            "BlogViewDate": "2023/10/13",
             "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
             "BlogViewTextTitleColor": "#000000",
             "BlogViewTextDescriptionColor": "#000000",
-            "BlogViewBackgroundColor": "#FFFFFF"
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
           },
           {
             "BlogViewTitle": "title3",
             "BlogViewDescription": "cxgvnbfcgvbccvbnvcgvbvvvfdsfvxbcxjndbjsmndfbsnvdbv jhxfnfgdbd ncvbvbcc",
-            "BlogViewDate": "2023/10/13",
             "BlogViewImagePath": "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?size=626&ext=jpg&ga=GA1.2.95270652.1697459820&semt=sph",
             "BlogViewTextTitleColor": "#000000",
             "BlogViewTextDescriptionColor": "#000000",
-            "BlogViewBackgroundColor": "#FFFFFF"
+            "BlogViewTextBackgroundColor": "#c1c1c1",
+            "BlogViewBackgroundColor": "#EAEAEA",
+            "BlogViewRadius": 19.0
           }
         ]
       }
