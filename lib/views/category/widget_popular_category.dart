@@ -67,7 +67,6 @@ class PopulorCategoryView extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: category.categoryItems!.length,
             itemBuilder: (BuildContext context, int index) {
-              print("myitem${category.categoryItems![index]}");
               return InkWell(
                 onTap: () {},
                 child: Container(

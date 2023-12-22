@@ -32,7 +32,7 @@ class WidgetCallHalfImage extends StatelessWidget {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: const Color.fromARGB(255, 145, 145, 145),
                   ),
                   margin: EdgeInsets.only(
                       top: 8.0, bottom: 8.0, right: 8.0, left: 8.0),
