@@ -3,17 +3,17 @@ import 'package:dashboard/helper/util.dart';
 import 'package:flutter/material.dart';
 
 class WidgetImageWithTextButton extends StatelessWidget {
-  SliderItems myData;
-  WidgetImageWithTextButton(this.myData);
+  SliderItems sliderItems;
+  WidgetImageWithTextButton(this.sliderItems);
 
   @override
   Widget build(BuildContext context) {
-    Color buttonColor = Util.getColorFromHex(myData.sliderButtonColor!);
+    Color buttonColor = Util.getColorFromHex(sliderItems.sliderButtonColor!);
     return Container(
       child: Stack(
         children: [
           Image.network(
-            myData.sliderLink!,
+            sliderItems.sliderLink!,
             fit: BoxFit.cover,
             width: double.infinity,
           ),
@@ -24,7 +24,7 @@ class WidgetImageWithTextButton extends StatelessWidget {
               child: Column(
                 children: [
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                    Text(myData.sliderText!,
+                    Text(sliderItems.sliderText!,
                         style: const TextStyle(
                             backgroundColor: Colors.transparent,
                             color: Color.fromARGB(255, 243, 255, 21),
@@ -39,11 +39,11 @@ class WidgetImageWithTextButton extends StatelessWidget {
                           ElevatedButton(
                             onPressed: () {
                               print("clicked");
-                              print("my ${myData.sliderButtonClicked}");
-                              myData.sliderButtonClicked;
+                              print("my ${sliderItems.sliderButtonClicked}");
+                              sliderItems.sliderButtonClicked;
                             },
                             child: Text(
-                              myData.sliderButtonText!,
+                              sliderItems.sliderButtonText!,
                             ),
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: buttonColor),

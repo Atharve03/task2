@@ -33,6 +33,7 @@ class _DashboardState extends State<Dashboard> {
                 if (element.view == "Sliders") {
                   return WidgetSlider(element.sliderData!, (item) {
                     (element.sliderData);
+                    print("object");
                   });
                 }
                 if (element.view == "Category") {

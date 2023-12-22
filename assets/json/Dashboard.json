@@ -309,6 +309,7 @@
     {
       "View": "ImageView",
       "ImageViewData": {
+        "ImageViewViewType": "Full",
         "ImageViewSrc": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "ImageViewRadius": 19.0,
         "ImageViewContainerColor": "#808080",
@@ -316,14 +317,42 @@
         "ImageViewMargin": 8.0,
         "ImageViewPadding": 8.0,
         "ImageViewTextView": {
-          "ImageViewDescriptionFontSize": 16.0,
+          "ImageViewTitleFontSize": 18.0,
+          "ImageViewDescriptionFontSize": 14.0,
           "ImageViewFontColor": "#000000",
           "ImageViewFontWeight": "normal",
-          "ImageViewFontType": "",
+          "ImageViewFontType": "B",
           "ImageViewNumberOfLines": 4,
           "ImageViewBackgroundColor2": "#EAEAEA",
           "ImageViewMargin": 8.0,
           "ImageViewPadding": 8.0,
+          "ImageViewTitle": "My Title",
+          "ImageViewDescription": "My TextView Description"
+        }
+      }
+    },
+    
+    {
+      "View": "ImageView",
+      "ImageViewData": {
+        "ImageViewViewType": "Half",
+        "ImageViewSrc": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ImageViewRadius": 19.0,
+        "ImageViewContainerColor": "#c1c1c1",
+        "ImageViewBackgroundColor": "#EAEAEA",
+        "ImageViewMargin": 8.0,
+        "ImageViewPadding": 8.0,
+        "ImageViewTextView": {
+          "ImageViewTitleFontSize": 18.0,
+          "ImageViewDescriptionFontSize": 14.0,
+          "ImageViewFontColor": "#000000",
+          "ImageViewFontWeight": "normal",
+          "ImageViewFontType": "B",
+          "ImageViewNumberOfLines": 4,
+          "ImageViewBackgroundColor2": "#EAEAEA",
+          "ImageViewMargin": 8.0,
+          "ImageViewPadding": 8.0,
+          "ImageViewTitle": "My Title",
           "ImageViewDescription": "My TextView Description"
         }
       }

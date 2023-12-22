@@ -435,6 +435,7 @@ class ImageViewData {
   double? imageViewMargin;
   double? imageViewPadding;
   ImageViewTextView? imageViewTextView;
+  String? imageViewViewType;
 
   ImageViewData(
       {this.imageViewSrc,
@@ -443,7 +444,8 @@ class ImageViewData {
       this.imageViewBackgroundColor,
       this.imageViewMargin,
       this.imageViewPadding,
-      this.imageViewTextView});
+      this.imageViewTextView,
+      this.imageViewViewType});
 
   ImageViewData.fromJson(Map<String, dynamic> json) {
     imageViewSrc = json['ImageViewSrc'];
@@ -455,6 +457,7 @@ class ImageViewData {
     imageViewTextView = json['ImageViewTextView'] != null
         ? new ImageViewTextView.fromJson(json['ImageViewTextView'])
         : null;
+    imageViewViewType = json['ImageViewViewType'];
   }
 
   Map<String, dynamic> toJson() {
@@ -468,11 +471,13 @@ class ImageViewData {
     if (this.imageViewTextView != null) {
       data['ImageViewTextView'] = this.imageViewTextView!.toJson();
     }
+    data['ImageViewViewType'] = this.imageViewViewType;    
     return data;
   }
 }
 
 class ImageViewTextView {
+  double? imageViewTitleFontSize;
   double? imageViewDescriptionFontSize;
   String? imageViewFontColor;
   String? imageViewFontWeight;
@@ -481,10 +486,12 @@ class ImageViewTextView {
   String? imageViewBackgroundColor2;
   double? imageViewMargin;
   double? imageViewPadding;
+  String? imageViewTitle;
   String? imageViewDescription;
 
   ImageViewTextView(
-      {this.imageViewDescriptionFontSize,
+      {this.imageViewTitleFontSize,
+      this.imageViewDescriptionFontSize,
       this.imageViewFontColor,
       this.imageViewFontWeight,
       this.imageViewFontType,
@@ -492,9 +499,11 @@ class ImageViewTextView {
       this.imageViewBackgroundColor2,
       this.imageViewMargin,
       this.imageViewPadding,
+      this.imageViewTitle,
       this.imageViewDescription});
 
   ImageViewTextView.fromJson(Map<String, dynamic> json) {
+    imageViewTitleFontSize = json['ImageViewTitleFontSize'];
     imageViewDescriptionFontSize = json['ImageViewDescriptionFontSize'];
     imageViewFontColor = json['ImageViewFontColor'];
     imageViewFontWeight = json['ImageViewFontWeight'];
@@ -503,11 +512,13 @@ class ImageViewTextView {
     imageViewBackgroundColor2 = json['ImageViewBackgroundColor2'];
     imageViewMargin = json['ImageViewMargin'];
     imageViewPadding = json['ImageViewPadding'];
+    imageViewTitle = json['ImageViewTitle'];
     imageViewDescription = json['ImageViewDescription'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['ImageViewTitleFontSize'] = this.imageViewTitleFontSize;
     data['ImageViewDescriptionFontSize'] = this.imageViewDescriptionFontSize;
     data['ImageViewFontColor'] = this.imageViewFontColor;
     data['ImageViewFontWeight'] = this.imageViewFontWeight;
@@ -516,7 +527,8 @@ class ImageViewTextView {
     data['ImageViewBackgroundColor2'] = this.imageViewBackgroundColor2;
     data['ImageViewMargin'] = this.imageViewMargin;
     data['ImageViewPadding'] = this.imageViewPadding;
-    data['ImageViewDescription'] = this.imageViewDescription;
+    data['ImageViewTitle'] = this.imageViewTitle;
+    data['ImageViewDescriptionFontSize'] = this.imageViewDescriptionFontSize;
     return data;
   }
 }

@@ -37,7 +37,7 @@ class _WidgetBlogViewState extends State<WidgetBlogView> {
             // height: 375.0,
             // enlargeCenterPage: true,
             autoPlay: widget.blogViewData.blogViewAutoPlay!,
-            aspectRatio:  widget.blogViewData.blogViewAspectRatio!,
+            aspectRatio: widget.blogViewData.blogViewAspectRatio!,
             autoPlayCurve: Curves.fastOutSlowIn,
             enableInfiniteScroll:
                 widget.blogViewData.blogViewEnableInfiniteScroll!,
