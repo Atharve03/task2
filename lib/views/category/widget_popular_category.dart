@@ -4,8 +4,10 @@ import 'package:flutter/services.dart';
 import 'package:dashboard/helper/util.dart';
 
 class WidgetPopularCategory extends StatelessWidget {
+  Function(CategoryItems) OnClick;
   CategoryData category;
-  WidgetPopularCategory(this.category);
+  WidgetPopularCategory(this.category, this.OnClick);
+  
   @override
   Widget build(BuildContext context) {
     Color containerBackgroundColor =
@@ -36,7 +38,7 @@ class WidgetPopularCategory extends StatelessWidget {
               ],
             ),
           ),
-          PopulorCategoryView(category),
+          PopulorCategoryView(category, OnClick),
         ],
       ),
     );
@@ -44,8 +46,9 @@ class WidgetPopularCategory extends StatelessWidget {
 }
 
 class PopulorCategoryView extends StatelessWidget {
+  Function(CategoryItems) OnClick;
   CategoryData category;
-  PopulorCategoryView(this.category);
+  PopulorCategoryView(this.category, this.OnClick);
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +71,7 @@ class PopulorCategoryView extends StatelessWidget {
             itemCount: category.categoryItems!.length,
             itemBuilder: (BuildContext context, int index) {
               return InkWell(
-                onTap: () {},
+                onTap: () {OnClick(listItems[index]);},
                 child: Container(
                   width: 110,
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),

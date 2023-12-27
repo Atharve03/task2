@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class WidgetBannerVideo extends StatelessWidget {
+  Function(VideoViewData) OnClick;
   VideoViewData videoViewData;
-  WidgetBannerVideo(this.videoViewData);
+  WidgetBannerVideo(this.videoViewData, this.OnClick);
 
   @override
   Widget build(BuildContext context) {
@@ -13,31 +14,35 @@ class WidgetBannerVideo extends StatelessWidget {
         videoViewData.videoViewTextView!.videoViewFontColor!);
     var bgColor = Util.getColorFromHex(videoViewData.videoViewBackgroundColor!);
 
-    return Container(
-      margin: EdgeInsets.all(videoViewData.videoViewMargin!),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(videoViewData.videoViewRadius!),
-        color: bgColor,
-      ),
-      width: double.infinity,
-      // color: bgColor,
-      child: Column(
-        children: [
-          MyVideo(videoViewData),
-          Padding(
-            padding: EdgeInsets.all(videoViewData.videoViewPadding!),
-            child: Text(
-              videoViewData.videoViewTextView!.videoViewDescription!,
-              style: TextStyle(
-                  color: textColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: videoViewData
-                      .videoViewTextView!.videoViewDescriptionFontSize),
-            ),
+    return InkWell(
+        onTap: () {
+          OnClick(videoViewData);
+        },
+        child: Container(
+          margin: EdgeInsets.all(videoViewData.videoViewMargin!),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(videoViewData.videoViewRadius!),
+            color: bgColor,
           ),
-        ],
-      ),
-    );
+          width: double.infinity,
+          // color: bgColor,
+          child: Column(
+            children: [
+              MyVideo(videoViewData),
+              Padding(
+                padding: EdgeInsets.all(videoViewData.videoViewPadding!),
+                child: Text(
+                  videoViewData.videoViewTextView!.videoViewDescription!,
+                  style: TextStyle(
+                      color: textColor,
+                      fontWeight: FontWeight.bold,
+                      fontSize: videoViewData
+                          .videoViewTextView!.videoViewDescriptionFontSize),
+                ),
+              ),
+            ],
+          ),
+        ));
   }
 }
 

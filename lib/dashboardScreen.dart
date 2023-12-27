@@ -1,10 +1,12 @@
 import 'dart:convert';
+import 'package:dashboard/views/banners/widget_banner_with_button.dart';
 import 'package:dashboard/views/blog/widget_blog_view.dart';
 import 'package:dashboard/modelClass/DashboardModel.dart';
 import 'package:dashboard/views/banners/widget_banner_image.dart';
 import 'package:dashboard/views/banners/widget_banner_text.dart';
 import 'package:dashboard/views/banners/widget_banner_video.dart';
 import 'package:dashboard/views/category/widget_popular_category.dart';
+import 'package:dashboard/views/faq.dart';
 import 'package:dashboard/views/product/widget_product_view.dart';
 import 'package:dashboard/views/slider/widget_slider.dart';
 import 'package:flutter/material.dart';
@@ -30,32 +32,58 @@ class _DashboardState extends State<Dashboard> {
             return SingleChildScrollView(
               child: Column(
                   children: myList.dashboardJson!.map((element) {
+
+
                 if (element.view == "Sliders") {
-                  return WidgetSlider(element.sliderData!, (item) {
-                    (element.sliderData);
-                    print("object");
-                  });
+                  // return WidgetSlider(element.sliderData!, (item) {
+                  //   (element.sliderData);
+                  //   print("itemSliders $item");
+                  // });
+                    return WidgetFrequentlyAskedQuestions();
                 }
-                if (element.view == "Category") {
-                  return WidgetPopularCategory(element.categoryData!);
-                }
-                if (element.view == "Product") {
-                  return WidgetPopulorProduct(element.productData!);
-                }
-                if (element.view == "TextView") {
-                  return WidgetBannerText(element.textViewData!);
-                }
-                if (element.view == "ImageView") {
-                  return WidgetBannerImage(element.imageViewData!);
-                }
-                if (element.view == "VideoView") {
-                  return WidgetBannerVideo(element.videoViewData!);
-                }
-                if (element.view == "BlogView") {
-                  return WidgetBlogView(element.blogViewData!, (item) {
-                    (element.blogViewData!);
-                  });
-                }
+                // if (element.view == "Category") {
+                //   return WidgetPopularCategory(element.categoryData!, (item) {
+                //     (element.categoryData);
+                //     print("itemCategory $item");
+                //   });
+                // }
+                // if (element.view == "Product") {
+                //   return WidgetPopulorProduct(element.productData!, (item) {
+                //     (element.productData);
+                //     print("itemProduct $item");
+                //   });
+                // }
+                // if (element.view == "TextView") {
+                //   return WidgetBannerText(element.textViewData!, (item) {
+                //     (element.textViewData);
+                //     print("itemTextView $item");
+                //   });
+                // }
+                // if (element.view == "ImageView") {
+                //   return WidgetBannerImage(element.imageViewData!, (item) {
+                //     (element.imageViewData);
+                //     print("itemImageView $item");
+                //   });
+                // }
+                // if (element.view == "DetailButtonView") {
+                //   return WidgetBannerImageButton(element.buttonViewData!, (item) {
+                //     (element.buttonViewData);
+                //     print("itemButtonView $item");
+                //   });
+                // }
+                // if (element.view == "VideoView") {
+                //   return WidgetBannerVideo(element.videoViewData!, (item) {
+                //     (element.videoViewData);
+                //     print("itemVideoView $item");
+                //   });
+                // }
+                // if (element.view == "BlogView") {
+                //   return WidgetBlogView(element.blogViewData!, (item) {
+                //     (element.blogViewData!);
+                //     print("itemBlogView $item");
+                //   });
+                // }
+
                 return SizedBox.shrink();
               }).toList()),
             );

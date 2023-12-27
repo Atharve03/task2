@@ -3,15 +3,20 @@ import 'package:dashboard/modelClass/DashboardModel.dart';
 import 'package:flutter/material.dart';
 
 class WidgetBannerImage extends StatelessWidget {
+  Function(ImageViewData) OnClick;
   ImageViewData imageViewData;
-  WidgetBannerImage(this.imageViewData);
+  WidgetBannerImage(this.imageViewData, this.OnClick);
 
   @override
   Widget build(BuildContext context) {
     if (imageViewData.imageViewViewType == "Full") {
-      return FullImage(imageViewData);
+        return InkWell(
+          onTap: (){OnClick(imageViewData);},
+          child: FullImage(imageViewData));
     } else {
-      return HalfImage(imageViewData);
+        return InkWell(
+          onTap: (){OnClick(imageViewData);},
+          child: HalfImage(imageViewData));
     }
   }
 }
@@ -101,6 +106,7 @@ class HalfImage extends StatelessWidget {
                     ),
           Expanded(
             child: Container(
+              // height: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius:
                       BorderRadius.circular(imageViewData.imageViewRadius!),

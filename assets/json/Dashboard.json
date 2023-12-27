@@ -47,6 +47,35 @@
       }
     },
     {
+      "View": "DetailButtonView",
+      "ButtonViewData": {
+        "ButtonViewViewType": "Bottom",
+        "BackgroundImageViewSrc": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "WholeViewRadius": 19.0,
+        "ContainerColor": "#c1c1c1",
+        "BackgroundImageViewColor": "#EAEAEA",
+        "Margin": 8.0,
+        "Padding": 8.0,
+        "TitleFontSize": 18.0,
+        "DescriptionFontSize": 14.0,
+        "FontColor": "#000000",
+        "Title": "My New Title",
+        "Description": "My TextView Description",
+        "NumberOfLines": 4,
+          
+        "ButtonView": {
+          "ButtonRadius": 15.0,
+          "ButtonRadiusColor":"ffffff",
+          "ButtonFontColor": "#000000",
+          "ButtonFontWeight": "normal",
+          "ButtonBackgroundColor": "#EAEAEA",
+          "ButtonMargin": 8.0,
+          "ButtonPadding": 8.0,
+          "ButtonText": "My Button"
+        }
+      }
+    },
+    {
       "View": "BlogView",
       "BlogViewData": {
         "BlogViewAutoPlay": false,
@@ -89,6 +118,35 @@
             "BlogViewRadius": 19.0
           }
         ]
+      }
+    },
+    {
+      "View": "DetailButtonView",
+      "ButtonViewData": {
+        "ButtonViewViewType": "Top",
+        "BackgroundImageViewSrc": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "WholeViewRadius": 19.0,
+        "ContainerColor": "#c1c1c1",
+        "BackgroundImageViewColor": "#EAEAEA",
+        "Margin": 8.0,
+        "Padding": 8.0,
+        "TitleFontSize": 18.0,
+        "DescriptionFontSize": 14.0,
+        "FontColor": "#000000",
+        "Title": "My New Title",
+        "Description": "My TextView Description",
+        "NumberOfLines": 4,
+          
+        "ButtonView": {
+          "ButtonRadius": 15.0,
+          "ButtonRadiusColor":"ffffff",
+          "ButtonFontColor": "#000000",
+          "ButtonFontWeight": "normal",
+          "ButtonBackgroundColor": "#EAEAEA",
+          "ButtonMargin": 8.0,
+          "ButtonPadding": 8.0,
+          "ButtonText": "My Button"
+        }
       }
     },
     {
@@ -316,6 +374,7 @@
         "ImageViewBackgroundColor": "#EAEAEA",
         "ImageViewMargin": 8.0,
         "ImageViewPadding": 8.0,
+
         "ImageViewTextView": {
           "ImageViewTitleFontSize": 18.0,
           "ImageViewDescriptionFontSize": 14.0,
@@ -331,7 +390,6 @@
         }
       }
     },
-    
     {
       "View": "ImageView",
       "ImageViewData": {

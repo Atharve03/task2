@@ -29,6 +29,7 @@ class DashboardJson {
   ProductData? productData;
   TextViewData? textViewData;
   ImageViewData? imageViewData;
+  ButtonViewData? buttonViewData;
   VideoViewData? videoViewData;
   BlogViewData? blogViewData;
 
@@ -39,6 +40,7 @@ class DashboardJson {
       this.productData,
       this.textViewData,
       this.imageViewData,
+      this.buttonViewData,
       this.videoViewData,
       this.blogViewData});
 
@@ -58,6 +60,9 @@ class DashboardJson {
         : null;
     imageViewData = json['ImageViewData'] != null
         ? new ImageViewData.fromJson(json['ImageViewData'])
+        : null;
+    buttonViewData = json['ButtonViewData'] != null
+        ? new ButtonViewData.fromJson(json['ButtonViewData'])
         : null;
     videoViewData = json['VideoViewData'] != null
         ? new VideoViewData.fromJson(json['VideoViewData'])
@@ -84,6 +89,9 @@ class DashboardJson {
     }
     if (this.imageViewData != null) {
       data['ImageViewData'] = this.imageViewData!.toJson();
+    }
+    if (this.buttonViewData != null) {
+      data['ButtonViewData'] = this.buttonViewData!.toJson();
     }
     if (this.videoViewData != null) {
       data['VideoViewData'] = this.videoViewData!.toJson();
@@ -533,6 +541,123 @@ class ImageViewTextView {
   }
 }
 
+class ButtonViewData {
+  String? buttonViewViewType;
+  String? backgroundImageViewSrc;
+  double? wholeViewRadius;
+  String? containerColor;
+  String? backgroundImageViewColor;
+  double? margin;
+  double? padding;
+  String? fontColor;
+  double? titleFontSize;
+  double? descriptionFontSize;
+  String? title;
+  String? description;
+  int? numberOfLines;
+  ButtonView? buttonView;
+
+  ButtonViewData(
+      {this.buttonViewViewType,
+      this.backgroundImageViewSrc,
+      this.wholeViewRadius,
+      this.containerColor,
+      this.backgroundImageViewColor,
+      this.margin,
+      this.padding,
+      this.fontColor,
+      this.titleFontSize,
+      this.descriptionFontSize,
+      this.title,
+      this.description,
+      this.numberOfLines,
+      this.buttonView});
+
+  ButtonViewData.fromJson(Map<String, dynamic> json) {
+    buttonViewViewType = json['ButtonViewViewType'];
+    backgroundImageViewSrc = json['BackgroundImageViewSrc'];
+    wholeViewRadius = json['WholeViewRadius'];
+    containerColor = json['ContainerColor'];
+    backgroundImageViewColor = json['BackgroundImageViewColor'];
+    margin = json['Margin'];
+    padding = json['Padding'];
+    fontColor = json['FontColor'];
+    titleFontSize = json['TitleFontSize'];
+    descriptionFontSize = json['DescriptionFontSize'];
+    title = json['Title'];
+    description = json['Description'];
+    numberOfLines = json['NumberOfLines'];
+    buttonView = json['ButtonView'] != null
+        ? new ButtonView.fromJson(json['ButtonView'])
+        : null;
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['ButtonViewViewType'] = this.buttonViewViewType;
+    data['BackgroundImageViewSrc'] = this.backgroundImageViewSrc;
+    data['WholeViewRadius'] = this.wholeViewRadius;
+    data['ContainerColor'] = this.containerColor;
+    data['BackgroundImageViewColor'] = this.backgroundImageViewColor;
+    data['Margin'] = this.margin;
+    data['Padding'] = this.padding;
+    data['FontColor'] = this.fontColor;
+    data['TitleFontSize'] = this.titleFontSize;
+    data['DescriptionFontSize'] = this.descriptionFontSize;
+    data['Title'] = this.title;
+    data['Description'] = this.description;
+    data['NumberOfLines'] = this.numberOfLines;
+    if (this.buttonView != null) {
+      data['ButtonView'] = this.buttonView!.toJson();
+    }
+    return data;
+  }
+}
+
+class ButtonView {
+  double? buttonRadius;
+  String? buttonRadiusColor;
+  String? buttonFontColor;
+  String? buttonFontWeight;
+  String? buttonBackgroundColor;
+  double? buttonMargin;
+  double? buttonPadding;
+  String? buttonText;
+
+  ButtonView(
+      {this.buttonRadius,
+      this.buttonRadiusColor,
+      this.buttonFontColor,
+      this.buttonFontWeight,
+      this.buttonBackgroundColor,
+      this.buttonMargin,
+      this.buttonPadding,
+      this.buttonText});
+
+  ButtonView.fromJson(Map<String, dynamic> json) {
+    buttonRadius = json['ButtonRadius'];
+    buttonRadiusColor = json['ButtonRadiusColor'];
+    buttonFontColor = json['ButtonFontColor'];
+    buttonFontWeight = json['ButtonFontWeight'];
+    buttonBackgroundColor = json['ButtonBackgroundColor'];
+    buttonMargin = json['ButtonMargin'];
+    buttonPadding = json['ButtonPadding'];
+    buttonText = json['ButtonText'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['ButtonRadius'] = this.buttonRadius;
+    data['ButtonRadiusColor'] = this.buttonRadiusColor;
+    data['ButtonFontColor'] = this.buttonFontColor;
+    data['ButtonFontWeight'] = this.buttonFontWeight;
+    data['ButtonBackgroundColor'] = this.buttonBackgroundColor;
+    data['ButtonMargin'] = this.buttonMargin;
+    data['ButtonPadding'] = this.buttonPadding;
+    data['ButtonText'] = this.buttonText;
+    return data;
+  }
+}
 class VideoViewData {
   String? videoViewSrc;
   String? videoViewContainerColor;

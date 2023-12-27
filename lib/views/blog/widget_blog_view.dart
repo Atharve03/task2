@@ -9,8 +9,9 @@ import 'package:dashboard/views/blog/blog_position_text.dart';
 
 class WidgetBlogView extends StatefulWidget {
   BlogViewData blogViewData;
+   Function(BlogViewItems) onClick;
   WidgetBlogView(this.blogViewData, this.onClick, {super.key});
-  Function(BlogViewItems) onClick;
+ 
 
   @override
   State<WidgetBlogView> createState() => _WidgetBlogViewState();
@@ -26,11 +27,17 @@ class _WidgetBlogViewState extends State<WidgetBlogView> {
         CarouselSlider(
           items: widget.blogViewData.blogViewItems!.map((item) {
             if (widget.blogViewData.blogViewViewType == "View1") {
-              return WidgetCallHalfImage(item);
+        return InkWell(
+          onTap: (){widget.onClick(item);},
+          child: WidgetCallHalfImage(item));
             } else if (widget.blogViewData.blogViewViewType == "View2") {
-              return WidgetCall(item);
+        return InkWell(
+          onTap: (){widget.onClick(item);},
+          child: WidgetCall(item));
             } else {
-              return WidgetCallPosition(item);
+        return InkWell(
+          onTap: (){widget.onClick(item);},
+          child: WidgetCallPosition(item));
             }
           }).toList(),
           options: CarouselOptions(

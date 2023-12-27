@@ -7,7 +7,9 @@ import 'package:flutter/services.dart';
 
 class WidgetPopulorProduct extends StatelessWidget {
   ProductData product;
-  WidgetPopulorProduct(this.product);
+  Function(ProductItems) OnClick;
+  WidgetPopulorProduct(this.product, this.OnClick);
+
   @override
   Widget build(BuildContext context) {
     Color containerBackgroundColor =
@@ -37,7 +39,7 @@ class WidgetPopulorProduct extends StatelessWidget {
               ],
             ),
           ),
-          PopulorProductView(product),
+          PopulorProductView(product, OnClick),
         ],
       ),
     );
@@ -45,8 +47,9 @@ class WidgetPopulorProduct extends StatelessWidget {
 }
 
 class PopulorProductView extends StatelessWidget {
+  Function(ProductItems) OnClick;
   ProductData product;
-  PopulorProductView(this.product);
+  PopulorProductView(this.product, this.OnClick);
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +72,7 @@ class PopulorProductView extends StatelessWidget {
             itemCount: product.productItems!.length,
             itemBuilder: (BuildContext context, int index) {
               return InkWell(
-                onTap: () {},
+                onTap: () {OnClick(listItems[index]);},
                 child: Container(
                   width: 130,
                   decoration: BoxDecoration(

@@ -10,6 +10,7 @@ class WidgetSlider extends StatefulWidget {
   Function(SliderItems) OnClick;
   SliderData sliderData;
   WidgetSlider(this.sliderData, this.OnClick);
+  
   @override
   State<WidgetSlider> createState() => _WidgetSliderState();
 }
@@ -35,12 +36,16 @@ class _WidgetSliderState extends State<WidgetSlider> {
     List<Widget> carouselItems = widget.sliderData.sliderItems!.map((item) {
       if (item.sliderType == "Image") {
         return InkWell(
-          onTap: widget.OnClick(item),
+          onTap: (){widget.OnClick(item);},
           child: WidgetImage(item));
       } else if (item.sliderType == "ImageWithText") {
-        return WidgetImageWithText(item);
+        return InkWell(
+          onTap: (){widget.OnClick(item);},
+          child: WidgetImageWithText(item));
       } else {
-        return WidgetImageWithTextButton(item);
+        return InkWell(
+          onTap: (){widget.OnClick(item);},
+          child: WidgetImageWithTextButton(item));
       }
     }).toList();
 
